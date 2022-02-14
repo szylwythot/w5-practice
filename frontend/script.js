@@ -70,14 +70,41 @@ const c = "hello C";*/
 
 // d();
 
+// let e = 1;
+// console.log(e);
+// let f = e;
+// e = 2;
+// console.log(e);
+// e = e * 2;
+// console.log(e);
+// console.log(f);
+
+
+// multiplyByTwo(1); //here we can access the funcion by no error
 let e = 1;
-console.log(e);
-let f = e;
-e = 2;
-console.log(e);
-e = e * 2;
-console.log(e);
-console.log(f);
+function multiplyByTwo(myNumber){ // parameter scope is function or local
+    console.log(myNumber);
+    return myNumber * 2;
+}
+
+ let f = multiplyByTwo(1);
+ console.log(f);
+ console.log(multiplyByTwo(e));
+//  console.log(num);
+
+
+
+
+ //////////////////////////////////////////////////////////////////////
+
+//  function functionRunner(myFunction){
+//      console.log("functionrunner");
+//      return myFunction(3);
+//  }
+
+//  functionRunner(multiplyByTwo);
+
+// console.log(multiplyByTwo()); // returns NaN
 
 // let object1 = {"key": "value"};
 // let object2 = object1;
