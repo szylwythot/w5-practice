@@ -14,7 +14,30 @@
 // console.log(true);
 // console.log(typeof false);
 
-console.log(undefined);
-console.log(typeof undefined);
-console.log(null);
-console.log(typeof null);
+// console.log(undefined);
+// console.log(typeof undefined);
+// console.log(null);
+// console.log(typeof null);
+
+console.log({
+    "title" : "Start coding",
+    "type" : "Solo",
+    "difficulty" : 4.1,
+    "usefullness" : 4.2,
+    "enjoability" : 3.7,
+    "materials" : 3.4,
+    "tasks" : [
+        {
+            "title" : "Bank accounts",
+            "description" : ""
+        },
+        {
+            "title" : "100 doors",
+            "description" : ""
+        },
+        {
+            "title" : "Word filter",
+            "description" : ""
+        }
+    ]
+});
