@@ -1,4 +1,4 @@
-console.log(a); // this way it is inicialized with undefinied, but we can reach it. like: var a = undefinied;
+//console.log(a); // this way it is inicialized with undefinied, but we can reach it. like: var a = undefinied;
 //console.log(b); // Cannot access 'b' before initialization (and the code is not starting)
 //console.log(c); // Cannot access 'c' before initialization (and the code is not starting)
 
@@ -47,9 +47,40 @@ console.log(a); // this way it is inicialized with undefinied, but we can reach 
 }); */
 
 // hoisting
-var a = "hello A";
+/* var a = "hello A";
 let b = "hello B";
-const c = "hello C";
+const c = "hello C";*/
 
-console.log(b);
-console.log(c);
+
+// scopes
+// function d(){
+//     // if(1+1 === 2){
+//     //     var a = "hello A";
+//     //     let b = "hello B";
+//     //     const c = "hello C";
+//     // }
+        
+//     var a = "hello A";// this way the variables are declared before beginning of the function
+//     let b = "hello B"; // this way the variables are declared at the beginning of the function
+//     const c = "hello C"; // this way the variables are declared at the beginning of the function
+//     console.log(a);
+//     console.log(b);
+//     console.log(c); 
+// }
+
+// d();
+
+let e = 1;
+console.log(e);
+let f = e;
+e = 2;
+console.log(e);
+e = e * 2;
+console.log(e);
+console.log(f);
+
+// let object1 = {"key": "value"};
+// let object2 = object1;
+// object1.key = "value2";
+// console.log(object1);
+// console.log(object2);
