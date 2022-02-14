@@ -1,3 +1,7 @@
+console.log(a); // this way it is inicialized with undefinied, but we can reach it. like: var a = undefinied;
+//console.log(b); // Cannot access 'b' before initialization (and the code is not starting)
+//console.log(c); // Cannot access 'c' before initialization (and the code is not starting)
+
 // console.log("Hello!");
 // console.log('sima');
 // console.log(`backtick`);
@@ -19,7 +23,7 @@
 // console.log(null);
 // console.log(typeof null);
 
-console.log({
+/* console.log({
     "title" : "Start coding",
     "type" : "Solo",
     "difficulty" : 4.1,
@@ -40,4 +44,12 @@ console.log({
             "description" : ""
         }
     ]
-});
+}); */
+
+// hoisting
+var a = "hello A";
+let b = "hello B";
+const c = "hello C";
+
+console.log(b);
+console.log(c);
