@@ -92,13 +92,38 @@ function multiplyByTwo(myNumber){ // parameter scope is function or local
  console.log(multiplyByTwo(e));
 //  console.log(num);
 
+// let g = {
+//     "myMethod" : function (){ // this is a method - anonym function as a value of myMethod key
+//         console.log("Hello");
+//     }
+// }
+// g.myMethod();
 
+
+
+// let window = {
+//     addEventListener: function (eventName, eventFunction){
+//         if(eventName === "load"){
+//             eventFunction();
+//         }
+//     }
+// };
+// window.addEventListener("load", g.myMethod);
+
+let h = {
+    "anotherMethod" : function (text){
+        return `You sent the following argument to this method: ${text}`;
+    }
+}
+console.log(h.anotherMethod("argument"));
+let i = h.anotherMethod("another argument");
+console.log(i);
 
 
  //////////////////////////////////////////////////////////////////////
 
 //  function functionRunner(myFunction){
-//      console.log("functionrunner");
+//      console.log("we are in functionrunner");
 //      return myFunction(3);
 //  }
 
