@@ -133,7 +133,8 @@ const c = "hello C";*/
 
 // mySecondObject.myString = "dömdödöm";
 // // console.log(myObject.myString);
-
+ 
+// //the sub chuldren, which are object are not cloned here, just they are hyperlinked
 // let myFourthObject = {...myObject};
 // myFourthObject.myString = "Vacskamati";
 
