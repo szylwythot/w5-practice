@@ -81,15 +81,15 @@ const c = "hello C";*/
 
 
 // multiplyByTwo(1); //here we can access the funcion by no error
-let e = 1;
-function multiplyByTwo(myNumber){ // parameter scope is function or local
-    console.log(myNumber);
-    return myNumber * 2;
-}
+// let e = 1;
+// function multiplyByTwo(myNumber){ // parameter scope is function or local
+//     console.log(myNumber);
+//     return myNumber * 2;
+// }
 
- let f = multiplyByTwo(1);
- console.log(f);
- console.log(multiplyByTwo(e));
+//  let f = multiplyByTwo(1);
+//  console.log(f);
+//  console.log(multiplyByTwo(e));
 //  console.log(num);
 
 // let g = {
@@ -110,29 +110,36 @@ function multiplyByTwo(myNumber){ // parameter scope is function or local
 // };
 // window.addEventListener("load", g.myMethod);
 
-let h = {
-    "anotherMethod" : function (text){
-        return `You sent the following argument to this method: ${text}`;
-    }
-}
-console.log(h.anotherMethod("argument"));
-let i = h.anotherMethod("another argument");
-console.log(i);
+// let myString = "mikkamakka";
+// let mySecondString = myString;
+// let myThirdString = "mikkamakka";
+// console.log(myString);
+// console.log(mySecondString);
 
+// console.log(myString === mySecondString);
+// console.log(myString === myThirdString);
 
- //////////////////////////////////////////////////////////////////////
+// let myObject = {
+//     "myString" : "mikkamakka"
+// };
 
-//  function functionRunner(myFunction){
-//      console.log("we are in functionrunner");
-//      return myFunction(3);
-//  }
+// let mySecondObject = myObject;
+// let myThirdObject =  {
+//     "myString" : "mikkamakka"
+// };
 
-//  functionRunner(multiplyByTwo);
+// // console.log(myObject === mySecondObject);
+// // console.log(myObject === myThirdObject);
 
-// console.log(multiplyByTwo()); // returns NaN
+// mySecondObject.myString = "dömdödöm";
+// // console.log(myObject.myString);
 
-// let object1 = {"key": "value"};
-// let object2 = object1;
-// object1.key = "value2";
-// console.log(object1);
-// console.log(object2);
+// let myFourthObject = {...myObject};
+// myFourthObject.myString = "Vacskamati";
+
+// console.log(myObject.myString);
+// console.log(myFourthObject.myString);
+
+// console.log("" === "");
+// console.log({} === {});
+
