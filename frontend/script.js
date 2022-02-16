@@ -1,26 +1,36 @@
-// window.addEventListener(`load`, function  (){
-//     console.log("The page is loaded 1");
-// });
-
 function loadEvent(){
     console.log("The page is loaded 2");
-    for (const movie of movies) {
-        document.getElementById("root").insertAdjacentHTML("beforeend",`
+    let rootElement = document.getElementById("root")
+    
+    let card = function (movieRecieved){
+        return `
         <div class="card">
-            <h1>${movie.title}</h1>
-            <span>${movie.year}</span>
-            <em>${movie.rate}</em>
+            <h2>${movieRecieved.title}</h2>
+            <div class="time">${movieRecieved.year}</div>
+            <div class="rate">${movieRecieved.rate}</div>
         </div>
-        `);
+        `;
+    };
+
+    
+    rootElement.insertAdjacentHTML("beforeend", card({
+        "title": "Moulin Rouge",
+        "year" : 2001,
+        "rate" : 9.9
+    }));
+
+    let actuallyFavouriteMovie = {
+        "title": "Eternal sunshine of a spotless mind",
+        "year" : 2004,
+        "rate" : 9.8
+    };
+
+    rootElement.insertAdjacentHTML("beforeend", card(actuallyFavouriteMovie));
+    rootElement.insertAdjacentHTML("beforeend", card(movies[0]));
 
 
-        // h1 title, year spanben, rate, nem lehet új div, de flex-szel kell 3 oszlopba rendezni
-        // // this can be done, because we dont change the whole object
-        // movie.title = "Titanic";
-
-        // //this thows Assignment to constant variable at runtime
-        // movie = "Titanic";
-        // // console.log(movie.title);
+    for (const movieSend of movies) {
+        rootElement.insertAdjacentHTML("beforeend", card(movieSend));
     }
 
     console.log(movies);
