@@ -1,36 +1,26 @@
 function loadEvent(){
     console.log("The page is loaded 2");
-    let rootElement = document.getElementById("root")
-    
-    let card = function (movieRecieved){
+    let rootElement = document.getElementById("root");
+
+    let card2 = function (title, year, rate){
         return `
         <div class="card">
-            <h2>${movieRecieved.title}</h2>
-            <div class="time">${movieRecieved.year}</div>
-            <div class="rate">${movieRecieved.rate}</div>
+            <h2>${title}</h2>
+            <div class="time">${year}</div>
+            <div class="rate">${rate}</div>
         </div>
         `;
     };
 
-    
-    rootElement.insertAdjacentHTML("beforeend", card({
-        "title": "Moulin Rouge",
-        "year" : 2001,
-        "rate" : 9.9
-    }));
-
-    let actuallyFavouriteMovie = {
-        "title": "Eternal sunshine of a spotless mind",
-        "year" : 2004,
-        "rate" : 9.8
+    let anotherFavouriteMovie = {
+        "title" : "The last scout boy",
+        "year" : 1991,
+        "rate" : 7.0
     };
-
-    rootElement.insertAdjacentHTML("beforeend", card(actuallyFavouriteMovie));
-    rootElement.insertAdjacentHTML("beforeend", card(movies[0]));
-
+    rootElement.insertAdjacentHTML("beforeend", card2(anotherFavouriteMovie.title, anotherFavouriteMovie.year, anotherFavouriteMovie.rate));
 
     for (const movieSend of movies) {
-        rootElement.insertAdjacentHTML("beforeend", card(movieSend));
+        rootElement.insertAdjacentHTML("beforeend", card2(movieSend.title, movieSend.year, movieSend.rate));
     }
 
     console.log(movies);

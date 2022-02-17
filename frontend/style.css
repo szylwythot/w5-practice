@@ -14,10 +14,11 @@
     height: 100px;
 
     /* margin: 10px; */
-    border: solid 1px #04062b;
+    border: solid 4px #04062b;
     padding: 15px;
 
-    background-color: rgb(247, 247, 214);
+    background-color: rgb(210, 105, 30);
+    color: antiquewhite;
 
 
     /* flex-direction: column;
