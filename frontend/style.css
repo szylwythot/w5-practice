@@ -27,7 +27,7 @@
     align-items: center; */
 }
 
-.card h1, .card span, .card em{
+.card h2, .card span, .card em{
     flex-grow: 1;
     flex-shrink:0;
     flex-basis:auto;
@@ -35,7 +35,7 @@
     height: 33%;
 }
 
-.card h1{
+.card h2{
     font-size: 15px;
 }
 
